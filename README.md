@@ -1,0 +1,11 @@
+Inorder to run the scripts, the user will need to install python v3.
+
+For OS this can be done using homebrew.
+Run the following command 
+- brew install python
+
+For Windows python can be installed using chocolaty. Once chocolaty is installed, the user can run the following command to install python:
+- choco install python
+
+The scripts were written with the following version of python:
+Python 2.7.15
