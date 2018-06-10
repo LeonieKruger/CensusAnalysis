@@ -6,8 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/CrimeStats/CrimeStats.iml" filepath="$PROJECT_DIR$/CrimeStats/CrimeStats.iml" />
       <module fileurl="file://$PROJECT_DIR$/DataCreation/DataCreation.iml" filepath="$PROJECT_DIR$/DataCreation/DataCreation.iml" />
       <module fileurl="file://$PROJECT_DIR$/PopulationGrowth/PopulationGrowth.iml" filepath="$PROJECT_DIR$/PopulationGrowth/PopulationGrowth.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Wordcloud/Wordcloud.iml" filepath="$PROJECT_DIR$/Wordcloud/Wordcloud.iml" />
-      <module fileurl="file://$PROJECT_DIR$/webapp/webapp.iml" filepath="$PROJECT_DIR$/webapp/webapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src//main/python/src//main/python.iml" filepath="$PROJECT_DIR$/src//main/python/src//main/python.iml" />
     </modules>
   </component>
 </project>

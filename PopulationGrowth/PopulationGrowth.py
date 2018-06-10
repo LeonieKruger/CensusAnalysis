@@ -2,7 +2,6 @@
 # Find your api_key here: https://plot.ly/settings/api
 
 import plotly.plotly as py
-import plotly.graph_objs as go
 
 # MatPlotlib
 import matplotlib.pyplot as plt

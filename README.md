@@ -14,4 +14,7 @@ Python 2.7.15
 **Install python build tool** 
 pip install pybuilder
 
-see http://pybuilder.github.io/documentation/tutorial.html#.WxxvzzMzaYU for details
+see http://pybuilder.github.io/documentation/tutorial.html#.WxxvzzMzaYU for a tutorial
+
+**To build dependencies, run the following command. For permissions it is required to execute command as sodoer or in Windows as administrator**
+-pyb install_dependencies
