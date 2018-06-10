@@ -32,6 +32,6 @@ plt.scatter(province,typeOfCrime,s=numberOccurence,color=colors)
 
 plt.xlabel("Province")
 plt.ylabel("CrimeType")
-plt.title("Home Robbery")
+plt.title("Crime South Africa")
 
 plt.show()
