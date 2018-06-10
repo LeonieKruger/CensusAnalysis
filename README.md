@@ -1,6 +1,6 @@
 Inorder to run the scripts, the user will need to install python v3.
 
-**For OS this can be done using homebrew.
+**For OS this can be done using homebrew. See https://www.howtogeek.com/211541/homebrew-for-os-x-easily-installs-desktop-apps-and-terminal-utilities/ for steps to download homebrew
 Run the following command** 
 `- brew install python`
 
@@ -20,3 +20,8 @@ see http://pybuilder.github.io/documentation/tutorial.html#.WxxvzzMzaYU for a tu
 `-pyb install_dependencies`
 
 **Static code analysis was preformed using SonarLint plugin for IntelliJ**
+
+csvsql --dialect mysql --snifflimit 100000 VOCS2016-2017-HOUSEHOLD_F1.csv > mytabledef.sql
+
+
+python CreateInsertQuery.py > textfile.txt
