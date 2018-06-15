@@ -1,3 +1,6 @@
+# @author Leonie Kruger
+# @project ELEN 7046
+
 import urllib
 import numpy as np
 from mpl_toolkits.basemap import Basemap

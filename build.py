@@ -1,3 +1,6 @@
+# @author Leonie Kruger
+# @project ELEN 7046
+
 from pybuilder.core import init, use_plugin
 
 use_plugin("python.core")

@@ -1,3 +1,6 @@
+# @author Leonie Kruger
+# @project ELEN 7046
+
 import plotly.plotly as py
 import plotly.graph_objs as go
 
@@ -6,7 +9,7 @@ df = pd.read_csv('/Users/leoniekruger/CencusData/Data/MapPlot.csv')
 df.head()
 
 cases = []
-colors = ['rgb(93,206,175)','rgb(94,204,243)','rgb(78,103,200)']
+colors = ['rgb(255,38,107)','rgb(255,201,38)','rgb(38,147,255)']
 type = {6: 'Housebreaking', 7: 'HomeRobbery', 8: 'TheftMotorVehicle'}
 
 for i in range(6,9)[::-1]:

@@ -1,7 +1,10 @@
-import csv
+# @author Leonie Kruger
+# @project ELEN 7046
+
 from wordcloud import WordCloud
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt, mpld3
 import random
+import pyodbc
 
 def random_color_func(word=None, font_size=None, position=None,  orientation=None, font_path=None, random_state=None):
     h = int(100.0 * float(random.randint(10, 100)) / 255.0)
@@ -10,10 +13,21 @@ def random_color_func(word=None, font_size=None, position=None,  orientation=Non
     return "hsl({}, {}%, {}%)".format(h, s, l)
 
 cmap=plt.get_cmap('ocean')
-reader = csv.reader(open('/Users/leoniekruger/CencusData/Data/CrimeStats.csv', 'r',newline='\n'))
 d = {}
-for k,v in reader:
-    d[k] = int(v)
+
+server = 'Enk-sql01.swh.mweb.co.za'
+database = 'm5699140_aWare'
+username = 'm5699140_sysadmin'
+password = 'Sysadm1!'
+driver='/usr/local/lib/libmsodbcsql.13.dylib'
+
+cnxn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER=Enk-sql01.swh.mweb.co.za;DATABASE=m5699140_aWare;UID=m5699140_sysadmin;PWD=Sysadm1!')
+cursor = cnxn.cursor()
+
+cursor.execute("EXEC dbo.uspGetCrimeCountTotal")
+rows = cursor.fetchall()
+for row in rows:
+    d[row[0]] = int(row[1])
 
 wc = WordCloud(width=400,height=150,background_color="white", max_words=20, max_font_size=200, relative_scaling=0.3, prefer_horizontal=0.4 , random_state=42).generate_from_frequencies(d)
 
@@ -21,7 +35,9 @@ plt.imshow(wc.recolor(color_func=random_color_func, random_state=30))
 plt.imshow(wc, interpolation='bilinear')
 plt.tight_layout(pad=0)
 plt.axis("off")
+mpld3.save_html()
 plt.show()
+
 
 # Thanks https://github.com/amueller/word_cloud/blob/master/wordcloud/wordcloud.py for the description/doc below
 #

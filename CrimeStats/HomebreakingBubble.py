@@ -5,6 +5,8 @@ import csv
 import matplotlib.cm as cm
 
 # see https://matplotlib.org/examples/color/colormaps_reference.html for colour map colours
+# @author Leonie Kruger
+# @project ELEN 7046
 
 typeOfCrime = []
 province = []
@@ -12,6 +14,10 @@ numberOccurence =[]
 
 csvfile = open("/Users/leoniekruger/CencusData/Data/CrimeNumberProvince.csv", "r")
 csvReader = csv.reader(csvfile)
+
+
+
+
 
 with open('/Users/leoniekruger/CencusData/Data/CrimeNumberProvince.csv','r') as csvfile:
     plots = csv.reader(csvfile, delimiter=',')

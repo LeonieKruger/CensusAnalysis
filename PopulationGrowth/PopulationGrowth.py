@@ -1,3 +1,6 @@
+# @author Leonie Kruger
+# @project ELEN 7046
+
 # Learn about API authentication here: https://plot.ly/python/getting-started
 # Find your api_key here: https://plot.ly/settings/api
 
@@ -9,10 +12,10 @@ from matplotlib import pylab
 
 # Scientific libraries
 import numpy as np
+
+
 from scipy.optimize import curve_fit
 import plotly
-plotly.tools.set_credentials_file(username='LeonieKruger', api_key='XTukMI3kQ4kPQZs5PI2l')
-
 
 import csv
 
