@@ -35,7 +35,6 @@ plt.imshow(wc.recolor(color_func=random_color_func, random_state=30))
 plt.imshow(wc, interpolation='bilinear')
 plt.tight_layout(pad=0)
 plt.axis("off")
-mpld3.save_html()
 plt.show()
 
 
