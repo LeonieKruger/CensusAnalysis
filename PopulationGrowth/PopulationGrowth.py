@@ -7,10 +7,7 @@ from matplotlib import pylab
 
 # Scientific libraries
 import numpy as np
-
-
 from scipy.optimize import curve_fit
-import plotly
 
 import csv
 

@@ -1,5 +1,5 @@
-import plotly.plotly as py
-import plotly.graph_objs as go
+# @author Leonie Kruger
+# @project ELEN 7046
 
 # MatPlotlib
 import matplotlib.pyplot as plt
@@ -22,7 +22,6 @@ print(x)
 print(y)
 coef = np.polyfit(x, y, 1)
 p_func = np.poly1d(coef)
-# p30 = np.poly1d(np.polyfit(x, y, 30))
 xp = np.linspace(x[0], x[len(x)-1]+20, 100)
 
 ax = plt.gca()
