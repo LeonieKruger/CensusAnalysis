@@ -19,33 +19,29 @@
         </nav>
         <h3 class="text-muted">Census Visualization App</h3>
       </div>
- 
+
       <div class="jumbotron">
         <h1>Complete Details</h1>
         <form>
           <h2>Gender </h2>
-          <br>
           <input type="radio" name ="gender" value="male"> Male<br>
-          <input type="radio" name ="gender" value="male"> Female<br>
+          <input type="radio" name ="gender" value="female"> Female<br>
           <br>
           <h2>Race</h2>
-          <br>
-          <select>
-            <option value="white">White</option>
-            <option value="black">Black</option>
-            <option value="asian">Asian</option>
-            <option value="indian">Indian</option>
-            <option value="other">Other</option>
-          </select>
+          <input type="radio" name ="race" value="black">Black</option> <br>
+          <input type="radio" name ="race" value="coloured">Coloured</option> <br>
+          <input type="radio" name ="race"  value="white">White</option> <br>
+          <input type="radio" name ="race" value="asian">Asian</option> <br>
+          <input type="radio" name ="race"  value="indian">Indian</option> <br>
+          <input type="radio" name ="race" value="other">Other</option> <br>
           <br>
           <br>
           <h2>Martial Status</h2>
+          <input type="radio" name ="status" value="married"> Married<br>
+          <input type="radio" name ="status" value="widowed"> Widowed<br>
+          <input type="radio" name ="status" value="single"> Single<br>
           <br>
-          <input type="radio" name ="status" value="male"> Married<br>
-          <input type="radio" name ="status" value="male"> Widowed<br>
-          <input type="radio" name ="status" value="male"> Single<br>
-          <br>
-          <p><a class="btn btn-lg btn-success" href="saveDetails" role="button">Save Details</a>
+          <button id="btnSaveDetails" class="btn btn-lg btn-success"type="button">Save Details</button>
       </form>
       </div>
  

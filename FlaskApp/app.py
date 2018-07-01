@@ -25,7 +25,7 @@ def saveDetails():
     return render_template('savedetails.html')
 
 @app.route('/main')
-def showHome():
+def showMain():
     return render_template('index.html')
 
 @app.route('/home')
@@ -58,10 +58,24 @@ def Authenticate():
     password = request.args.get('inputPassword')
     conn = mysql.connect()
     cursor = conn.cursor()
-    sql="INSERT INTO BucketList.tbl_user (user_id,user_name,user_username,user_password) " "VALUES ({}," "'{}'," "'{}'," " '{}' ); ".format(10, name ,email , password)
+    cursor.execute('''SELECT MAX(user_id) FROM BucketList.tbl_user''')
+    maxid = cursor.fetchone() #(10,)
+    sql="INSERT INTO BucketList.tbl_user (user_id,user_name,user_username,user_password) " "VALUES ({}," "'{}'," "'{}'," " '{}' ); ".format(maxid[0] + 1, name ,email , password)
     number_of_rows = cursor.execute(sql)
     conn.commit()
     return "Successfully registered " +sql
+
+@app.route("/SaveDetails")
+def SaveDetails():
+    gender = request.args.get('gender')
+    status = request.args.get('status')
+    race = request.args.get('race')
+    conn = mysql.connect()
+    cursor = conn.cursor()
+    sql="INSERT INTO BucketList.tbl_details " "VALUES ({}," "'{}'," "'{}'," " '{}' ); ".format(gender , race,status)
+    number_of_rows = cursor.execute(sql)
+    conn.commit()
+    return "Details saved successfully " +sql
 
 if __name__ == "__main__":
     app.run()

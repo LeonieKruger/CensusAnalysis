@@ -16,5 +16,7 @@ def init (project):
     project.build_depends_on("Pillow")
     project.build_depends_on("numpy")
     project.build_depends_on("scipy")
+    project.build_depends_on("Flask")
+    project.build_depends_on("flask-mysql")
 
 
