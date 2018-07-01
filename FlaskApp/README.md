@@ -8,3 +8,5 @@ _-flask-mysql_
 
 **cd To the directory where app.py is visible and run**
  `flask run`
+ 
+ The application can be accessed on http://127.0.0.1:5000
