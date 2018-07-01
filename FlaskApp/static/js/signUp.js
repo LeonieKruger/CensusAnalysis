@@ -3,7 +3,7 @@
          alert("A");
          $.ajax({
              url: '/Authenticate',
-             data: {Name:"leonie",UserName:"leonie",Password:"leonie"},
+             data: $('form').serialize(),
              success: function(response) {
                  console.log(response);
              },
