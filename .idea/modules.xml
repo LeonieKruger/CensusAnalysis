@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CencusData.iml" filepath="$PROJECT_DIR$/CencusData.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CreateReport/CreateReport.iml" filepath="$PROJECT_DIR$/CreateReport/CreateReport.iml" />
       <module fileurl="file://$PROJECT_DIR$/CrimeStats/CrimeStats.iml" filepath="$PROJECT_DIR$/CrimeStats/CrimeStats.iml" />
       <module fileurl="file://$PROJECT_DIR$/DataCreation/DataCreation.iml" filepath="$PROJECT_DIR$/DataCreation/DataCreation.iml" />
       <module fileurl="file://$PROJECT_DIR$/PopulationGrowth/PopulationGrowth.iml" filepath="$PROJECT_DIR$/PopulationGrowth/PopulationGrowth.iml" />
