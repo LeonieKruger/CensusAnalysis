@@ -28,6 +28,14 @@ def saveDetails():
 def showHome():
     return render_template('index.html')
 
+@app.route('/home')
+def showHome():
+    return render_template('index.html')
+
+@app.route('/showHomeRobberies')
+def showHomeRobberies():
+    return render_template('homerobberies.html')
+
 @app.route('/signUp')
 def signUp():
     @app.route('/signUp',methods=['POST'])

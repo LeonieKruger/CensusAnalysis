@@ -20,26 +20,32 @@
         <h3 class="text-muted">Census Visualization App</h3>
       </div>
  
-      <div>
+      <div class="jumbotron">
         <h1>Complete Details</h1>
         <form>
-          <span>Gender</span>
+          <h2>Gender </h2>
           <br>
           <input type="radio" name ="gender" value="male"> Male<br>
           <input type="radio" name ="gender" value="male"> Female<br>
           <br>
-          <span>Race</span>
+          <h2>Race</h2>
           <br>
-          <input type="radio" name ="race" value="male"> White<br>
-          <input type="radio" name ="race" value="male"> Black<br>
-          <input type="radio" name ="race" value="male"> Coloured<br>
+          <select>
+            <option value="white">White</option>
+            <option value="black">Black</option>
+            <option value="asian">Asian</option>
+            <option value="indian">Indian</option>
+            <option value="other">Other</option>
+          </select>
           <br>
-          <span>Martial Status</span>
+          <br>
+          <h2>Martial Status</h2>
           <br>
           <input type="radio" name ="status" value="male"> Married<br>
           <input type="radio" name ="status" value="male"> Widowed<br>
           <input type="radio" name ="status" value="male"> Single<br>
-          <button id="btnSaveDetails" type="button">Save Details</button>
+          <br>
+          <p><a class="btn btn-lg btn-success" href="saveDetails" role="button">Save Details</a>
       </form>
       </div>
  
