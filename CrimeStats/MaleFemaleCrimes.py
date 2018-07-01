@@ -1,17 +1,3 @@
-# Get this figure: fig = py.get_figure("https://plot.ly/~demos/1526/")
-# Get this figure's data: data = py.get_figure("https://plot.ly/~demos/1526/").get_data()
-# Add data to this figure: py.plot(Data([Scatter(x=[1, 2], y=[2, 3])]), filename ="vonneevonneevonnee2", fileopt="extend")
-# Get y data of first trace: y1 = py.get_figure("https://plot.ly/~demos/1526/").get_data()[0]["y"]
-
-# Get figure documentation: https://plot.ly/python/get-requests/
-# Add data documentation: https://plot.ly/python/file-options/
-
-# If you're using unicode in your file, you may need to specify the encoding.
-# You can reproduce this figure in Python with the following code!
-
-# Learn about API authentication here: https://plot.ly/python/getting-started
-# Find your api_key here: https://plot.ly/settings/api
-
 # @author Leonie Kruger
 # @project ELEN 7046
 

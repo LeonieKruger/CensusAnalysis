@@ -1,5 +1,6 @@
 # @author Leonie Kruger
 # @project ELEN 7046
+#This code was simply for experimental purposes. This did not form part of the project
 
 import plotly.plotly as py
 import plotly.graph_objs as go
