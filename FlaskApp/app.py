@@ -20,6 +20,14 @@ def main():
 def showSignUp():
     return render_template('signup.html')
 
+@app.route('/saveDetails')
+def saveDetails():
+    return render_template('savedetails.html')
+
+@app.route('/main')
+def showHome():
+    return render_template('index.html')
+
 @app.route('/signUp')
 def signUp():
     @app.route('/signUp',methods=['POST'])
@@ -42,7 +50,7 @@ def Authenticate():
     password = request.args.get('inputPassword')
     conn = mysql.connect()
     cursor = conn.cursor()
-    sql="INSERT INTO BucketList.tbl_user (user_id,user_name,user_username,user_password) " "VALUES ({}," "'{}'," "'{}'," " '{}' ); ".format(9, name ,email , password)
+    sql="INSERT INTO BucketList.tbl_user (user_id,user_name,user_username,user_password) " "VALUES ({}," "'{}'," "'{}'," " '{}' ); ".format(10, name ,email , password)
     number_of_rows = cursor.execute(sql)
     conn.commit()
     return "Successfully registered " +sql
