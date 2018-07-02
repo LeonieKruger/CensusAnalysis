@@ -24,9 +24,9 @@ m.drawmapboundary(fill_color='#FFFFFF')
 
 
 
-typeOfCrime = []
+type_of_crime = []
 province = []
-numberOccurence =[]
+number_occurence =[]
 lons=[]
 lats=[]
 
@@ -37,7 +37,7 @@ with open('/Users/leoniekruger/CencusData/Data/HouseBreaking.csv','r') as csvfil
     plots = csv.reader(csvfile, delimiter=',')
     for row in plots:
         province.append(row[0])
-        numberOccurence.append(int(row[2])*10)
+        number_occurence.append(int(row[2]) * 10)
 
 for province in province:
     from geopy.geocoders import Nominatim
@@ -51,7 +51,7 @@ for province in province:
     lat = location.latitude
     lon = location.longitude
     x,y = m(lon,lat)
-    m.plot(x,y,'go',markersize=numberOccurence[i]/100)
+    m.plot(x, y,'go', markersize=number_occurence[i] / 100)
     i=i+1
 
 plt.title('House Breaking Plotting')
