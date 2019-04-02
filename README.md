@@ -1,4 +1,4 @@
-Inorder to run the scripts, the user will need to install python v3.
+In order to run the scripts, the user will need to install python v3.
 
 **For OS this can be done using homebrew. See https://www.howtogeek.com/211541/homebrew-for-os-x-easily-installs-desktop-apps-and-terminal-utilities/ for steps to download homebrew
 Run the following command** 
